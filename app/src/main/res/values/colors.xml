@@ -8,7 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="back_colour">#13253D</color>
+    <color name="back_colour">#0D0D0E</color>
     <color name="bot_back_colour">#013B8A</color>
     <color name="user_back_colour">#6965ff</color>
     <color name="fab_colour">#551CAE</color>
