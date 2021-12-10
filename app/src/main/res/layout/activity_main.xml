@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/back_colour">
+    android:background="@drawable/og">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/idRVChats"
