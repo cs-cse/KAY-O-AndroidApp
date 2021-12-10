@@ -58,12 +58,10 @@ public class MainActivity extends AppCompatActivity {
     private void getResponse(String message){
         chatsModalArrayList.add(new ChatsModal(message,USER_KEY));
         chatRVAdapter.notifyDataSetChanged();
-        String url="http://api.brainshop.ai/get?bid=161997&key=0QhQncM8SWsyBTWm&uid=[uid]&msg=[msg]"+message;
+        String url="http://api.brainshop.ai/get?bid=162021&key=u9TBSHRKEFo6Ectn&uid=[uid]&msg="+message;
         String BASE_URL="http://api.brainshop.ai/";
-        Retrofit retrofit=new Retrofit.Builder()
-                .baseUrl(BASE_URL)
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
+        Retrofit retrofit=new Retrofit.Builder().baseUrl(BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create()) .build();
         RetrofitAPI retrofitAPI=retrofit.create(RetrofitAPI.class);
         Call<MsgModal>call=retrofitAPI.getMessage(url);
         call.enqueue(new Callback<MsgModal>() {
